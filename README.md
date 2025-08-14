@@ -35,7 +35,7 @@ The VPC Transit Gateway project focused on implementing and analyzing multi-regi
     4. Create our subnet- choose corresponding VPC and add AZ suffix(1a). For our subnet CIDR block change it to 12.0.1.0/24 this gives us 256 IPs. This gives us a public subnet subnet-my-vpc-east1-1a
     5. Create Route Table & populate routes- chose corresponding VPC. Associate VPC with route table.
         1. create routes: 0.0.0.0 destination and igw target(this gives us access to the internet from anywhere) route-table-my-vpc-east1
-<img width="1920" height="1128" alt="Screenshot 2025-07-31 113037" src="https://github.com/user-attachments/assets/0b153100-ba70-4788-b905-e552b5209e6c" />
+<img width="1920" height="900" alt="Screenshot 2025-07-31 113037" src="https://github.com/user-attachments/assets/0b153100-ba70-4788-b905-e552b5209e6c" />
     6. Deploy EC2 Servers: key pair name- ec2-my-vpc-east1-key Save key save key as ppk 
        <img width="1920" height="1128" alt="Screenshot 2025-07-31 113736" src="https://github.com/user-attachments/assets/b6f06f12-ca87-4ac2-8d9a-6026ca68e859" />
       b. Network Settings- choose corresponding VPC/subnet, auto assign public IP because we are using a public subnet, Add HTTP/S SG rule and ICMP Security Group rule (both from anywhere) secgroup-my-vpc-east1
